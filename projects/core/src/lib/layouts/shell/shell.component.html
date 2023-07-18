@@ -1,1 +1,35 @@
-<div>Shell Here!</div>
+<div fxLayout="column" fxLayoutGap="1rem">
+  <div fxFlex>
+    <mat-toolbar color="primary">
+      <div fxLayout="row" fxLayoutAlign="space-between center" fxFlexFill>
+        <span fxFlex="20">SOKA</span>
+
+        <div fxFlex="30">
+          <a mat-button>Startseite</a>
+          <a mat-button>Urlaub</a>
+          <a mat-button>Rente</a>
+        </div>
+
+        <button
+          fxFlex="10"
+          mat-button
+          aria-label="Example icon-button with share icon"
+        >
+          Postfach
+        </button>
+
+        <button
+          fxFlex="15"
+          mat-button
+          aria-label="Example icon-button with share icon"
+        >
+          Abmeldung
+        </button>
+      </div>
+    </mat-toolbar>
+
+    <mat-divider></mat-divider>
+  </div>
+
+  <div fxFlex="90">Content!</div>
+</div>
