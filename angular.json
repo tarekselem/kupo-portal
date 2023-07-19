@@ -61,7 +61,8 @@
               {
                 "input": "projects/kupo-ui/src/soka-theme.scss"
               },
-              "projects/kupo-ui/src/styles.scss"
+              "projects/kupo-ui/src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },

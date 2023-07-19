@@ -1,4 +1,5 @@
 @use "@angular/material" as mat;
+@use "@fontsource/source-sans-pro";
 
 @include mat.core();
 
@@ -13,7 +14,7 @@ $soka-theme: mat.define-light-theme(
     ),
     typography:
       mat.define-typography-config(
-        $font-family: sourceSansPro-Regular,
+        $font-family: "Source Sans Pro",
       ),
     density: 0,
   )

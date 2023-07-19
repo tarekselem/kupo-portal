@@ -1,8 +1,12 @@
 <div fxLayout="column" fxLayoutGap="1rem">
-  <div fxFlex>
+  <div fxFlex="10">
     <mat-toolbar color="primary">
       <div fxLayout="row" fxLayoutAlign="space-between center" fxFlexFill>
-        <span fxFlex="20">SOKA</span>
+        <img
+          fxFlex="14"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/SOKA-Bau_logo.svg/500px-SOKA-Bau_logo.svg.png"
+          alt="SOKA"
+        />
 
         <div fxFlex="30">
           <a mat-button>Startseite</a>
@@ -15,6 +19,7 @@
           mat-button
           aria-label="Example icon-button with share icon"
         >
+          <i class="fa fa-envelope"></i>
           Postfach
         </button>
 
@@ -31,5 +36,56 @@
     <mat-divider></mat-divider>
   </div>
 
-  <div fxFlex="90">Content!</div>
+  <div
+    fxFlex
+    fxLayout="row"
+    fxLayout.lt-lg="column"
+    fxLayoutAlign="start center"
+    fxLayoutGap="1rem"
+    style="padding: 1rem"
+  >
+    <mat-card fxFlex="50">
+      <mat-card-content fxLayout="row" fxLayoutAlign="start stretch">
+        <div fxFlex fxLayout="column" fxLayoutAlign="space-evenly center">
+          <span class="mat-mdc-card-title" fxFlex="60">Mein Urlaub</span>
+          <a fxFlex="20" mat-fab extended routerLink=".">
+            MEHER ERFAHREN
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <img
+          fxFlex="60"
+          src="https://www.soka-bau.de/fileadmin/user_upload/Bilder/Arbeitgeber/leistungen_urlaub_header_02.jpg"
+        />
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="50">
+      <mat-card-content fxLayout="row" fxLayoutAlign="start stretch">
+        <div fxFlex fxLayout="column" fxLayoutAlign="space-evenly center">
+          <span class="mat-mdc-card-title" fxFlex="60">Meine Rente</span>
+          <a fxFlex="20" mat-fab extended routerLink=".">
+            MEHER ERFAHREN
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <img
+          fxFlex="60"
+          src="https://www.soka-bau.de/fileadmin/_processed_/5/0/csm_113_Leistungen_Urlaubsverfahren_Hintergrund_fbd7ea0fe8.jpg"
+        />
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="50" class="blank-card">
+      <mat-card-content fxLayout="column" fxLayoutAlign="space-around center">
+        <span class="mat-mdc-card-title" fxFlex="40">Hilfe und Kontakt</span>
+        <a fxFlex="20" mat-fab extended routerLink=".">
+          MEHER ERFAHREN
+          <i class="fa fa-chevron-right"></i>
+        </a>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- <footer fxFlex="5">copy rights 2023</footer> -->
 </div>
